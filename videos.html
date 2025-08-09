@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Videos — Ahmad Sayyam</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+:root{--bg:#0b1020;--card:#0f1724;--muted:#98a0b0;--accent:#7c5cff;--accent2:#ff7a59;--glass:rgba(255,255,255,0.03)}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,-apple-system,Arial;background:linear-gradient(180deg,#061026 0%,#071122 100%);color:#eaf0ff; -webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:28px}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{display:flex;gap:14px;align-items:center}
+.logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:700}
+nav{display:flex;gap:12px;align-items:center}
+nav a{color:var(--muted);padding:8px 12px;border-radius:8px;transition:all .18s}
+nav a:hover{color:#fff;background:rgba(255,255,255,0.03)}
+.cta{background:linear-gradient(90deg,var(--accent),var(--accent2));padding:8px 14px;border-radius:8px;color:white;font-weight:700}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 380px;gap:24px;align-items:center;margin-top:18px}
+.hero-card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:26px;border-radius:14px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+h1{font-size:clamp(1.6rem,2.8vw,2.6rem);margin:0}
+.lead{color:var(--muted);margin-top:10px}
+.buttons{display:flex;gap:12px;margin-top:18px}
+.btn{padding:10px 14px;border-radius:10px;font-weight:700;cursor:pointer;display:inline-block}
+.btn-light{background:transparent;border:1px solid rgba(255,255,255,0.04);color:#fff}
+.btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#071022}
+
+/* sections */
+.section{margin-top:28px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--card);padding:14px;border-radius:12px;min-height:120px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .24s,box-shadow .24s}
+.card:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(2,6,23,0.6)}
+.card h3{margin:0;font-size:1.05rem}
+.card p{margin:8px 0 0;color:var(--muted);font-size:0.95rem}
+
+/* footer */
+footer{text-align:center;color:var(--muted);margin-top:28px;padding:24px 0}
+
+/* responsive */
+@media(max-width:980px){.hero{grid-template-columns:1fr;}.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.grid{grid-template-columns:1fr}nav{display:none}header{padding:12px}}
+
+/* small utilities */
+.kicker{font-size:0.85rem;color:var(--accent);font-weight:700}
+.profile-img{width:120px;height:120px;border-radius:14px;object-fit:cover;display:block;border:4px solid rgba(255,255,255,0.06)}
+.button-link{display:inline-block;padding:10px 12px;border-radius:10px;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#071022;font-weight:700}
+
+/* animated underline */
+.underline{position:relative;display:inline-block}
+.underline:after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:4px;border-radius:4px;background:linear-gradient(90deg,var(--accent),var(--accent2));transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.underline:hover:after{transform:scaleX(1)}
+</style>
+
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="brand"><div class="logo">AS</div><div><div style="font-weight:700">Ahmad Sayyam</div><div style="color:var(--muted);font-size:13px">Video Editor</div></div></div>
+    <nav><a href="index.html">Home</a><a href="videos.html">Videos</a><a href="audio.html">Audio</a><a href="scripts.html">Scripts</a><a href="contact.html">Contact</a></nav>
+  </header>
+
+  <section class="section" data-aos="fade-up">
+    <h2 class="underline">Health Videos</h2>
+    <p class="muted">Full edits & short-form health content.</p>
+    <div style="margin-top:12px"><a class="button-link" href="https://drive.google.com/drive/folders/1-1oeIjHaGUL1W2sF5NgBdfNam-8HGHY4" target="_blank">Open Health Videos</a></div>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2 class="underline">Motivational Videos</h2>
+    <p class="muted">Montages and voice-synced motivational edits.</p>
+    <div style="margin-top:12px"><a class="button-link" href="https://drive.google.com/drive/folders/106ELXG2p349qTCqAkxTcv4N7iC5a35a5" target="_blank">Open Motivational Videos</a></div>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2 class="underline">Tech Videos</h2>
+    <p class="muted">Explainers & product demos.</p>
+    <div style="margin-top:12px"><a class="button-link" href="https://drive.google.com/drive/folders/12cK-kZixiFRBUeVU07TZoZOCs19zN6fC" target="_blank">Open Tech Videos</a></div>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2 class="underline">Shorts & Single Files</h2>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px">
+      <div class="card"><h3>AI Short</h3><p class="muted">Social short.</p><div style="margin-top:10px"><a class="button-link" href="https://drive.google.com/file/d/1CgYPI0XAn-x-G7BUIiJGHh7GLbQ15Lwi/view?usp=drivesdk" target="_blank">Open AI Short</a></div></div>
+      <div class="card"><h3>Japanese Tech</h3><p class="muted">Localized edit.</p><div style="margin-top:10px"><a class="button-link" href="https://drive.google.com/file/d/1IoAJcfeWX6F9L3qZPSsYDs5xV8Bm8A0c/view?usp=drivesdk" target="_blank">Open Japanese Tech</a></div></div>
+      <div class="card"><h3>Instagram Viral</h3><p class="muted">Verticalized short.</p><div style="margin-top:10px"><a class="button-link" href="https://drive.google.com/file/d/1DMtgGRK9Sh7NhXfxr6YjZUdZS_tcMCMB/view?usp=drivesdk" target="_blank">Open IG Short</a></div></div>
+      <div class="card"><h3>Philosophy Art</h3><p class="muted">Experimental visuals.</p><div style="margin-top:10px"><a class="button-link" href="https://drive.google.com/file/d/1jaz5FOSyIQ4vKj4uG8isgma8EvDO0_yX/view?usp=drivesdk" target="_blank">Open Philosophy Art</a></div></div>
+      <div class="card"><h3>Documentary 1</h3><p class="muted">Long-form.</p><div style="margin-top:10px"><a class="button-link" href="https://drive.google.com/file/d/1HVMruMgARryJ18QuF3UXiTGFuVOkYQcN/view?usp=drivesdk" target="_blank">Open Doc 1</a></div></div>
+      <div class="card"><h3>Documentary 2</h3><p class="muted">Long-form part 2.</p><div style="margin-top:10px"><a class="button-link" href="https://drive.google.com/file/d/18m0Wx7ug4zQelxz3C_p6IxX-fitLp98M/view?usp=drivesdk" target="_blank">Open Doc 2</a></div></div>
+      <div class="card"><h3>UFC Edit</h3><p class="muted">Highlights.</p><div style="margin-top:10px"><a class="button-link" href="https://drive.google.com/file/d/1Ow-qtTSuqQMJqAcXpEzHGAlc8kYSjKpI/view?usp=drivesdk" target="_blank">Open UFC</a></div></div>
+      <div class="card"><h3>Horror Wardrobe</h3><p class="muted">Mood edit & sound design.</p><div style="margin-top:10px"><a class="button-link" href="https://drive.google.com/file/d/16AmS5OEDVy-gOKxjPOOWij58f9o1n0aJ/view?usp=drivesdk" target="_blank">Open Horror</a></div></div>
+    </div>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2 class="underline">Health Shorts & Gradients</h2>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:12px">
+      <a class="button-link" href="https://drive.google.com/drive/folders/1ETN8xnUHPTVHrcZlcQRIpcpbwycTZn5G" target="_blank">Health Shorts</a>
+      <a class="button-link" href="https://drive.google.com/drive/folders/15NxMwthTdxQ04FmuJSkSe4ikED3ZFPkR" target="_blank">Health Gradient Videos</a>
+    </div>
+  </section>
+
+  <footer>
+    <div class="muted">© 2025 Ahmad Sayyam • <a href="https://www.fiverr.com/s/42DzEZB2" target="_blank" style="color:var(--accent)">Hire on Fiverr</a></div>
+  </footer>
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><script> AOS.init({{duration:700,once:true}}); </script>
+</body>
+</html>

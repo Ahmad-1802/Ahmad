@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>Scripts — Ahmad Sayyam</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+:root{--bg:#0b1020;--card:#0f1724;--muted:#98a0b0;--accent:#7c5cff;--accent2:#ff7a59;--glass:rgba(255,255,255,0.03)}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,-apple-system,Arial;background:linear-gradient(180deg,#061026 0%,#071122 100%);color:#eaf0ff; -webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.container{max-width:1100px;margin:0 auto;padding:28px}
+header{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand{display:flex;gap:14px;align-items:center}
+.logo{width:56px;height:56px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent2));display:flex;align-items:center;justify-content:center;font-weight:700}
+nav{display:flex;gap:12px;align-items:center}
+nav a{color:var(--muted);padding:8px 12px;border-radius:8px;transition:all .18s}
+nav a:hover{color:#fff;background:rgba(255,255,255,0.03)}
+.cta{background:linear-gradient(90deg,var(--accent),var(--accent2));padding:8px 14px;border-radius:8px;color:white;font-weight:700}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1fr 380px;gap:24px;align-items:center;margin-top:18px}
+.hero-card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:26px;border-radius:14px;box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+h1{font-size:clamp(1.6rem,2.8vw,2.6rem);margin:0}
+.lead{color:var(--muted);margin-top:10px}
+.buttons{display:flex;gap:12px;margin-top:18px}
+.btn{padding:10px 14px;border-radius:10px;font-weight:700;cursor:pointer;display:inline-block}
+.btn-light{background:transparent;border:1px solid rgba(255,255,255,0.04);color:#fff}
+.btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#071022}
+
+/* sections */
+.section{margin-top:28px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--card);padding:14px;border-radius:12px;min-height:120px;display:flex;flex-direction:column;justify-content:space-between;transition:transform .24s,box-shadow .24s}
+.card:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(2,6,23,0.6)}
+.card h3{margin:0;font-size:1.05rem}
+.card p{margin:8px 0 0;color:var(--muted);font-size:0.95rem}
+
+/* footer */
+footer{text-align:center;color:var(--muted);margin-top:28px;padding:24px 0}
+
+/* responsive */
+@media(max-width:980px){.hero{grid-template-columns:1fr;}.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.grid{grid-template-columns:1fr}nav{display:none}header{padding:12px}}
+
+/* small utilities */
+.kicker{font-size:0.85rem;color:var(--accent);font-weight:700}
+.profile-img{width:120px;height:120px;border-radius:14px;object-fit:cover;display:block;border:4px solid rgba(255,255,255,0.06)}
+.button-link{display:inline-block;padding:10px 12px;border-radius:10px;background:linear-gradient(90deg,var(--accent),var(--accent2));color:#071022;font-weight:700}
+
+/* animated underline */
+.underline{position:relative;display:inline-block}
+.underline:after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:4px;border-radius:4px;background:linear-gradient(90deg,var(--accent),var(--accent2));transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.underline:hover:after{transform:scaleX(1)}
+</style>
+
+</head>
+<body>
+<div class="container">
+  <header><div class="brand"><div class="logo">AS</div><div><div style="font-weight:700">Ahmad Sayyam</div><div style="color:var(--muted);font-size:13px">Scripts & Writing</div></div></div>
+    <nav><a href="index.html">Home</a><a href="videos.html">Videos</a><a href="audio.html">Audio</a><a href="scripts.html">Scripts</a><a href="contact.html">Contact</a></nav>
+  </header>
+
+  <section class="section" data-aos="fade-up">
+    <h2 class="underline">Script Samples</h2>
+    <p class="muted">Click to open the folder containing multiple script samples (YouTube hooks, outlines, explainer scripts).</p>
+    <div style="margin-top:12px"><a class="button-link" href="https://drive.google.com/drive/folders/1A9r-yxwp7AEqeNbOX8nrHk81EsATVJKP" target="_blank">Open Script Samples</a></div>
+  </section>
+
+  <section class="section" data-aos="fade-up">
+    <h2 class="underline">Writing Services</h2>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:12px">
+      <div class="card"><h3>YouTube Hook + Outline</h3><p class="muted">Grab attention in the first 10 seconds.</p></div>
+      <div class="card"><h3>Full Video Script</h3><p class="muted">Detailed scripts matched to your pacing and B-roll.</p></div>
+      <div class="card"><h3>Shorts Script</h3><p class="muted">Punchy lines for vertical audiences.</p></div>
+      <div class="card"><h3>Call-to-action & Thumbnails</h3><p class="muted">Convert viewers into subscribers.</p></div>
+    </div>
+  </section>
+
+  <footer><div class="muted">© 2025 Ahmad Sayyam</div></footer>
+</div>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><script> AOS.init({{duration:700,once:true}}); </script>
+</body>
+</html>
